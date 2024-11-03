@@ -166,7 +166,7 @@ p{
 }
 
 #foot{
-    font-family: 'Roboto Mono';
+    font-family: "Roboto Mono", monospace;
     color: white;
     background-color: rgb(40 40 40 / .7);
     line-height: 80px;
@@ -209,7 +209,7 @@ p{
 
 #para2{
     position: relative;
-    font-family: 'Silkscreen';
+    font-family: "Silkscreen", serif;
     transform: translate(0px, 100px);
     background-color: rgb(40 40 40);
     border: 2px solid; color: white;
