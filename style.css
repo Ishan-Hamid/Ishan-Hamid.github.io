@@ -11,6 +11,102 @@
     font-family: Silkscreen;
 }
 
+/* Base styles apply to desktop */
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    background: #222;
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%; /* Slightly smaller font size for mobile */
+    }
+
+    #title1 {
+        font-size: 6vw; /* Scale down title font size */
+    }
+
+    #foot {
+        font-size: 3vw; /* Adjust footer font size */
+        width: 90%; /* Make footer responsive */
+    }
+
+    /* Adjust carousel width */
+    .carousel {
+        width: 90%;
+        height: 400px; /* Reduce height for smaller screens */
+    }
+
+    .carousel-slides {
+        flex-direction: column; /* Stack content vertically if needed */
+    }
+
+    /* Adjust the parallax section */
+    .parallax-section {
+        height: 100vh;
+        background-attachment: scroll; /* Disable fixed background for mobile */
+    }
+
+    .parallax-section .content {
+        transform: translate(0, -30vh); /* Center content on smaller screens */
+        padding: 10px;
+    }
+
+    /* Flex item adjustments */
+    #resume1, #resume2 {
+        float: none;
+        transform: translate(0, 0);
+        margin: 20px auto; /* Center the elements */
+        width: 90%;
+    }
+
+    /* Text adjustments for better readability */
+    h1 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    /* Make title font size even smaller */
+    #title1 {
+        font-size: 8vw;
+    }
+
+    /* Reduce carousel size */
+    .carousel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .slide h2 {
+        font-size: large;
+    }
+
+    /* Footer adjustments */
+    #foot {
+        font-size: 4vw;
+        height: auto;
+        line-height: normal;
+        padding: 10px;
+    }
+
+    /* Reduce padding and margins */
+    .parallax-section .content {
+        transform: translate(0, -20vh); /* Adjust for smaller screens */
+        padding: 5px;
+        width: 95%;
+    }
+}
+
+
 html{
     height: -webkit-fill-available;
     overflow: hidden;
