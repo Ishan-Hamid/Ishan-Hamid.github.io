@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet"  href = "style.css">
+</head>
+<body id = "body1">
+    <div class = section1>
+        <div id = "title1" class = title>
+        <h1><b>I S H A N&nbsp;&nbsp;H A M I D</b></h1>
+        <span style="color: white; font-family: Roboto Mono ;" ><h3>P O R T F O L I O</h3></span>
+        </div>
+
+        <div id = "foot">
+        &nbsp;&nbsp;
+        <a href = "Portfolio.html"> HOME</a>&nbsp;&nbsp;
+        <a href = "ABOUT.html"> ABOUT</a>&nbsp;&nbsp;
+        <a href = ""> PROJECTS</a>&nbsp;&nbsp;
+        <a href = ""> PHOTOS</a>&nbsp;&nbsp;
+        <a href = ""> RESUME</a>&nbsp;&nbsp;
+        <a href = ""> CONTACTS</a>&nbsp;&nbsp;
+        </div>
+    </div>
+
+    
+    <section id = "para1">
+        <div class="head">
+            <h1 style="font-size: 70px;text-align: center;"><b>A B O U T</b>
+            </h1>
+        </div>
+        <hr color="white">
+        <div id = "MeInBarca">
+            <img src="/images/Pisa.jpg" width="500">
+        </div>
+        <span style="font-size: 36px">
+        <p><b> HI! Im Ishan </b></p>
+        </span>
+        <span style="font-size: 36px">
+        <p>I am a 3rd year student at the University of Durham currently doing a masters in physics. I love physics but have many hobbies including;
+            running, travelling, volleyball, tennis, chess, reading and coding!
+        </p>
+        <p>I attend weekly sessions as a part of data science society as well as Durham Spaceflight,
+            one of the leading amateur rocketry groups in the world!
+       </p> 
+        <p>Although I am new to web development, I consider myself a python pro. In the next section you will see many of the 
+            projects that I have worked on both as part of my degree and in my own time. </p> 
+
+        </span>
+    </section> 
+    <section id = "para2">
+        <div class = head>
+            <h1 style = 'font-family: Silkscreen; font-size: 60px; text-align: center;'><b>PROJECTS</b></h1>
+            <hr>
+        </div>
+        <p style = "margin-left: 20px; font-family: Silkscreen;">
+        </p>
+
+        <div class="carousel">
+            <div class="carousel-slides">
+                <div class="slide active">
+                    <h2>3 Body Problem</h2>
+                    <img src = "/images/three-body.gif" style = "height: 500px;">
+                    <p>The subject of my computing project; trying to model a restricted 3 body system using different numerical methods of solving ODEs <b>[WIP]</b></p>
+                    <a href = "https://github.com/Ishan-Hamid/3BodyProject"> See Project</a>
+                </div>
+                <div class="slide">
+                    <h2> Galactic Morphology - Sersic Profile
+                    </h2>
+                    <img src = "/images/NGC_4414_(NASA-med).jpg" style = "height: 500px;">
+                    <p>Code used for my research led investigation to plot galactic data against their Sersic Profiles</p>
+                    <a href = "https://github.com/Ishan-Hamid/Galactic-Morphology-Code/tree/main"> See Project</a>
+                </div>
+                <div class="slide">
+                    <h2>Monte Carlo Integration</h2>
+                    <img src = "/images/MonteCarloIntegrationCircle.svg.png" style = "height: 500px;">
+                    <p>Playing around with the possibility of using random plots under a graph in order to 'integrate' it as another type of numerical integration.</p>
+                    <a href = "https://github.com/Ishan-Hamid/Testing-Monte-Carlo-Integration"> See Project</a>
+                </div>
+                <div class="slide">
+                    <h2>Gradient Descent, Mesh & Finding Extrema</h2>
+                    <img src = "/images/Banana (1).png" style = "height: 500px;">
+                    <p>I wanted to find the local minimum of Rosenbrock's Banana Function: f(x,y)≡(1−x)^2+100(y−x^2)^2 by designing a Function that launches a projectile that follows the path of steepest gradient.
+                        (My introduction to mesh grids/contour plots)
+                    </p>
+                    <a href = "https://github.com/Ishan-Hamid/Gradient-Descent-Function"> See Project</a>
+                </div>
+                <div class="slide">
+                    <h2>Solving Differential Equations: Projectile Motion</h2>
+                    <img src = "/images/Baller.jpg" style = "height: 450px;">
+                    <p>My first attempt at numerically solving differential equations. I looked at modelling projectile motion of an object subject to drag.</p>
+                    <a href = "https://github.com/Ishan-Hamid/Differential-Equations"> See Project</a>
+                </div>
+                <div class="slide">
+                    <h2>Modelling Diffusion & Object Orientated Code
+                    </h2>
+                    <img src = "/images/Diffusion.png" style = "height: 400px;">
+                    <p>My first attempt at numerically solving differential equations. I looked at modelling projectile motion of an object subject to drag.</p>
+                    <a href = "https://github.com/Ishan-Hamid/Diffusion-Model"> See Project</a>
+                </div>
+                <div class="slide">
+                    <h2>Simulating Radioactive Decay</h2>
+                    <img src = "/images/1-radioactive-water.jpg" style = "height: 500px;">
+                    <p>Using Monte Carlo simulations to model radioactive decay. </p>
+                    <a href = "https://github.com/Ishan-Hamid/Monte-Carlo-Simulations"> See Project</a>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <hr style="transform: translateY(193px);">
+    </section>
+    
+    <section class="parallax-section">
+        <div class="content">
+            <h1 style="font-size: 70px;text-align: center;"><b>R E S U M E</b>
+            </h1>
+        </div>
+        <div id = "resume1">
+            <img src = "images/Resume page 1.png">
+        </div>
+        <div id = "resume2">
+            <img src = "images/Resume page 2.png">
+        </div>
+    </section>
+
+<script src = "Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+@font-face{
+    src: url(fonts/RobotoMono-VariableFont_wght.ttf);
+    font-family: Roboto Mono;
+}
+@font-face{
+    src: url(fonts/KantumruyPro-VariableFont_wght.ttf);
+    font-family: Kantumruy;
+}
+@font-face{
+    src: url(fonts/Silkscreen-Regular.ttf);
+    font-family: Silkscreen;
+}
+
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.section1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+
+.section1::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(/images/Deep\ SPace.jpg);
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2); 
+
+}
+
+#title1{
+    margin: 0px;
+    color: rgb(176, 89, 253);
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 
+    5px 5px 70px rgba(255, 255, 255, 0.5);
+}
+
+h1{
+    font-family: 'Roboto Mono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{ 
+    font-family: 'Kantumruy', Courier, monospace;
+    color: white;
+}
+
+#foot{
+    font-family: 'Roboto Mono';
+    color: white;
+    background-color: rgb(40 40 40 / .7);
+    line-height: 80px;
+    vertical-align: middle;
+    border: 1px solid;
+    margin: auto;
+    border: 5px solid;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.3vw;
+    height: 8vh;
+    overflow:hidden;
+}
+
+.head{
+    color: rgb(255, 255, 255);
+    padding-top: 0px ;
+    font-size: x-large;
+    margin: 20px
+}
+
+#MeInBarca{
+    position: relative;
+    transform: translate(20px, 10px);
+    float: left;
+    padding-right:35px;
+}
+
+#para1{
+    position: relative;
+    transform: translate(0px, 100px);
+    background-color: #240046;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 1000px;
+}
+
+#para2{
+    position: relative;
+    font-family: 'Silkscreen';
+    transform: translate(0px, 100px);
+    background-color: rgb(40 40 40);
+    border: 2px solid; color: white;
+    height: 1000px;
+    border-radius: 5px;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    
+    padding-bottom:200px ;
+}
+
+/* Carousel */
+/* styles.css */
+.carousel {
+    position: relative;
+    width: 60%;
+    max-width: 1000px;
+    height: 700px; /* Set a fixed height for the carousel */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    margin: auto; /* Center the carousel horizontally */
+    top:5%;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%; /* Ensure the slides take the full height of the carousel */
+}
+
+.slide {
+    min-width: 100%;        /* Each slide takes full width */
+    height: 100%;           /* Ensure slides take full height */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;          /* Enable Flexbox for each slide */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center text vertically */
+    align-items: center;    /* Center text horizontally */
+    text-align: center;     /* Center text alignment */
+}
+
+.slide h2 {
+    margin: 0 0 10px;
+    color: black;
+    font-size:xx-large;
+}
+
+.slide p {
+    color: #666;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Resume */
+
+/* Parallax Section */
+.parallax-section {
+    position: relative;
+    height: 150vh; /* Full viewport height */
+    background-image: url('/images/view-starry-night-sky-with-nature-mountains-landscape.jpg'); /* Replace with your image path */
+    background-attachment: fixed; /* This is key for the parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Content styling within the parallax section */
+.parallax-section .content {
+    position: absolute;
+    transform: translate(0vw, -60vh);
+    padding-top: -100px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for readability */
+    border-radius: 20px;
+ }
+
+ #resume1{
+    position: absolute;
+    transform: translate(-20vw, 10vh);
+    float: left;
+}
+
+ #resume2{
+    position: absolute;
+    transform: translate(20vw, 10vh);
+    float: left;
+}
